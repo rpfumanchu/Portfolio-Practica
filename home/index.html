@@ -44,9 +44,9 @@
   <!-- sección  biografía -->
   <div>
     <section id="biografia">
-      <h1>
+      <h2>
         <strong>Biografía</strong>
-      </h1>
+      </h2>
       <a href="../home/">Home</a>
       <header>
         <h3><em>Marc Marquez</em></h3>
@@ -58,9 +58,9 @@
     <!-- sección Palmares -->
     <section id="palmares">
       <div>
-        <h1>
+        <h2>
           <strong>Palmares</strong>
-        </h1>
+        </h2>
         <a href="../home/">Home</a>
       </div>
       <article>
@@ -70,6 +70,7 @@
           </p>
         </header>
       </article>
+      <!-- con estos datos voy hacer las skill de barras progresivas -->
       <p>8titulos, 139 podios, 85 victoris, 91 poles, 75 vueltas rápidas, 282 carreras, puntos totales 3463</p>
     </section>
   </div>
@@ -77,9 +78,9 @@
     <!-- sección videos -->
     <section id="top-5">
       <div>
-        <h1>
+        <h2>
           <strong>Top-5</strong>
-        </h1>
+        </h2>
         <a href="../home/">Home</a>
       </div>
       <video
@@ -100,6 +101,68 @@
       </video>
     </section>
   </div>
+  <!--  Formulario Contacto -->
+  <div>
+    <section id="contacto">
+      <div>
+        <h2>
+          <strong>Contacto</strong>
+        </h2>
+        <a href="../home/">Home</a>
+      </div>
+      <form 
+      action="registro.html" 
+      method="post"
+      >
+        <div>
+          <label for="nombre"></label>
+          <input required name="nombre" id="nombre" type="text" placeholder="Nombre">
+        </div>
+        <div>
+          <label for="apellido"></label>
+          <input required name="apellido" id="apellido" type="text" placeholder="Apellidos">
+        </div>
+        <div>
+          <label for="phone"></label>
+          <input name="phone" id="phone" type="tel" placeholder="Teléfono">
+        </div>
+        <fieldset>
+          <legend>¿Como me conociste?</legend>
+          <label for="face">Facebook</label>
+          <input type="radio" id="face" name="como" value="facebook" checked>
+          <label for="inst">Instagram</label>
+          <input type="radio" name="como" id="inst" value="instagram" >
+          <label for="twi">Twitter</label>
+          <input type="radio" name="como" id="twi" value="twitter">
+          <label for="dz">Danz</label>
+          <input type="radio" name="como" id="dz" value="danz">
+        </fieldset>
+        <!-- expresión regular para obligar que el formato sea @username-->
+        <div>
+          <label for="club">Fanclub</label>
+          <input required type="text" name="fanclub" id="club" placeholder="@usuario" pattern="^@[^\s]+">
+        </div>
+        <div>
+          <label for="desc">Opinión</label>
+          <textarea required maxlength="180" name="motivo" id="desc" ></textarea>
+        </div>
+        <button type="submit">Guardar</button>
+      </form>
+      <div>
+        <details>
+          <summary>Mis mejores salvadas.</summary>
+
+        </details>
+      </div>
+    </section>
+  </div>
+  
+  
+
+
+
+
+
   <!-- footer -->
   <!-- no quiero que abandonen mi pagina ni tampoco dejar rastro en las páginas externas-->
   <footer>
