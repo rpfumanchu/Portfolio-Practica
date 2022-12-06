@@ -7,24 +7,41 @@
     <title>Práctica-PortFolio</title>
 </head>
 <body>
-    <h1>Marc Marquez</h1>
-    <nav>
-      <ul>
-        <li><a href="#biografia">Biografía</a></li>
-        <li><a href="#palmares">Palmares</a></li>
-        <li><a href="#top-5">Top-adelantamientos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+  <h1>Marc Marquez</h1>
+  <!-- barra de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#biografia">Biografía</a></li>
+      <li><a href="#palmares">Palmares</a></li>
+      <li><a href="#top-5">Top-adelantamientos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <!-- cabecera tres imagenes distintas con distintas resoluciones para cada imagen -->
   <header>
     <picture>
-      <source media="(min-width:1400px )" 
-      srcset="../imagenes/cabecera.jpg">
-      <source media="(min-width:760px)" 
-      srcset="../imagenes/cabecera-mediana.jpg">
-      <img src="../imagenes/cabecera-pequeña.jpg" alt="">
+      <source media="(min-width:1024px )" 
+      srcset="
+      ../imagenes/cabecera_300.jpg 1100w,
+      ../imagenes/cabecera_467.jpg 1300w,
+      ../imagenes/cabecera_612.jpg 1500w" 
+      alt="cabecera tres resoluciones">
+      <source media="(min-width:768px)" 
+      srcset="
+      ../imagenes/cabecera-mediana_250.jpg 850w,
+      ../imagenes/cabecera-mediana_413.jpg 1024w"
+      alt="cabecera-mediana dos resoluciones">
+      <source media="(min-width:50px )" 
+      srcset="
+      ../imagenes/cabecera-pequeña.jpg" 
+      alt="imagen pequeña">
+      <img 
+      src="
+      ../imagenes/cabecera.jpg " 
+      alt="imagen predeterminada">
     </picture>   
   </header>
+  <!-- sección  biografía -->
   <div>
     <section id="biografia">
       <h1>
@@ -38,6 +55,7 @@
     </section>
   </div>
   <div>
+    <!-- sección Palmares -->
     <section id="palmares">
       <div>
         <h1>
@@ -56,6 +74,7 @@
     </section>
   </div>
   <div>
+    <!-- sección videos -->
     <section id="top-5">
       <div>
         <h1>
@@ -79,6 +98,7 @@
       </video>
     </section>
   </div>
+  <!-- footer -->
   <!-- no quiero que abandonen mi pagina ni tampoco dejar rastro en las páginas externas-->
   <footer>
     <p>Marc Marquez®. Todos los derechos reservados 2022</p>
@@ -86,8 +106,6 @@
       <a href="https://www.instagram.com/marcmarquez93/" target="_blank" rel=" noopener noreferrer ">Instagram</a>
       <a href="https://es-es.facebook.com/marcmarquez1993/" target="_blank" rel=" noopener noreferrer ">Facebook</a>
       <a href="https://twitter.com/marcmarquez93" target="_blank" rel=" noopener noreferrer ">Twitter</a>
-      
-      
     </div>
   </footer>
   

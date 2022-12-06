@@ -1,0 +1,24 @@
+<picture>
+  <img srcset="
+    ../imagenes/cabecera_200.jpg 500w,
+    ../imagenes/cabecera_467.jpg 1000w,
+    ../imagenes/cabecera_612.jpg 1500w" 
+  src="../imagenes/cabecera_612.jpg" alt="">
+</picture>
+
+
+<picture>
+  <source media="(min-width:1400px )" srcset="../imagenes/cabecera_612.jpg 1500w">
+  <source media="(min-width:760px)" srcset="../imagenes/cabecera_467.jpg 1000w">
+  <img src="../imagenes/cabecera_200.jpg 500w" alt="">
+</picture>
+
+<picture>
+  <source media="(min-width:1024px )" srcset="../imagenes/cabecera_612.jpg">
+  <source media="(min-width:768px)" srcset="../imagenes/cabecera_467.jpg">
+  <img srcset="
+  ../imagenes/cabecera_300.jpg 500w,
+  ../imagenes/cabecera_467.jpg 1000w,
+  ../imagenes/cabecera_612.jpg 1500w" 
+  src="../imagenes/cabecera_300.jpg " alt="">
+</picture>
