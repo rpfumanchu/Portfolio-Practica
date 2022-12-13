@@ -1,0 +1,41 @@
+.carousel-container > .carousel-slides {
+    transition: 10s;
+
+}
+
+.carousel-link {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dot {
+    background-color: black;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    display: block;
+    border-radius: 50%;
+}
+
+.carousel-slides {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden; 
+    scroll-behavior: smooth;
+}
+
+.carousel-slides > div  {
+    display: flex;
+    justify-content: center;
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgb(182, 174, 174);
+}
+
+.carousel-slides > div img {
+    transition: 50s;
+}

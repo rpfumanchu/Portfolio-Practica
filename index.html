@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Práctica-PortFolio</title>
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -21,18 +22,18 @@
 
   <!-- barra de navegación -->
   <nav class="navbar">
-    <h4>Opciones</h4>
+    <h4>Busqueda</h4>
     <ul class="list">
       <li class="list-item"><a href="#biografia">Biografía</a></li>
       <li class="list-item"><a href="#palmares">Palmares</a></li>
-      <li class="list-item"><a href="#top-5">Top-adelantamientos</a></li>
+      <li class="list-item"><a href="#top-5">Top-5</a></li>
       <li class="list-item"><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 
   <!-- cabecera tres imagenes distintas con distintas resoluciones para cada imagen -->
   <header>
-    <picture>
+    <picture class="foto">
       <source media="(min-width:1024px )" srcset="
       /imagenes/cabecera_300.jpg 1100w,
       /imagenes/cabecera_467.jpg 1300w,
@@ -46,6 +47,35 @@
       /imagenes/cabecera.jpg " alt="imagen predeterminada">
     </picture>
   </header>
+  <section class="carousel-container">
+    <div class="carousel-slides">
+      <div id="casco1"><img src="img-cascos/casco1.jpg" alt="casco1"></div>
+      <div id="casco2"><img src="img-cascos/casco-2.jpg" alt="casco2"></div>
+      <div id="casco3"><img src="img-cascos/casco-3.jpg" alt="casco3"></div>
+      <div id="casco4"><img src="img-cascos/casco-4.jpg" alt="casco4"></div>
+      <div id="casco5"><img src="img-cascos/casco-5.jpg" alt="casco5"></div>
+      <div id="casco6"><img src="img-cascos/casco-6.jpg" alt="casco6"></div>
+      <div id="casco7"><img src="img-cascos/casco-7.jpg" alt="casco7"></div>
+      <div id="casco8"><img src="img-cascos/casco-8.jpg" alt="casco8"></div>
+      <div id="casco9"><img src="img-cascos/casco-9.jpg" alt="casco9"></div>
+      <div id="casco10"><img src="img-cascos/casco-10.jpg" alt="casco10"></div>
+    </div>
+    <div class="carousel-link">
+      <a href="#casco1" class="carousel-dot"></a>
+      <a href="#casco2" class="carousel-dot"></a>
+      <a href="#casco3" class="carousel-dot"></a>
+      <a href="#casco4" class="carousel-dot"></a>
+      <a href="#casco5" class="carousel-dot"></a>
+      <a href="#casco6" class="carousel-dot"></a>
+      <a href="#casco7" class="carousel-dot"></a>
+      <a href="#casco8" class="carousel-dot"></a>
+      <a href="#casco9" class="carousel-dot"></a>
+      <a href="#casco10" class="carousel-dot"></a>
+    </div>
+
+
+
+  </section>
 
   <!-- sección  biografía -->
   <section id="biografia">
@@ -54,7 +84,7 @@
     </h2>
     <a href="index.html">Home</a>
     <header>
-      <h3><em>Marc Marquez</em></h3>
+      <span><em>Marc Marquez</em></span>
       <p> <b>Marc Márquez Alentà</b> (Cervera, Lérida, 17 de febrero de 1993) es un piloto de motociclismo español que
         compite en MotoGP. Ha ganado ocho títulos del Campeonato del Mundo de Motociclismo en tres categorías
         diferentes: 125cc (2010), Moto2 (2012) y seis veces en MotoGP (2013, 2014, 2016, 2017, 2018 y 2019). Desde 2013
@@ -85,17 +115,21 @@
   </section>
 
   <!-- sección videos -->
-  <section id="top-5">
+  <section class="top" id="top-5">
     <div>
       <h2>
         <strong>Top-5</strong>
       </h2>
       <a href="index.html">Home</a>
     </div>
-    <video controls width="250" height="250" src="/videos/jerez.mp4" alt="video jerez">
-    </video>
-    <video controls width="250" height="250" src="/videos/sacacorchos.mp4" alt="video sacacorchos">
-    </video>
+    <div class="video">
+      <video class="video1" controls
+      src="/videos/jerez.mp4" alt="video jerez">
+      </video>
+      <video class="video2" controls
+      src="/videos/sacacorchos.mp4" alt="video sacacorchos">
+      </video>
+    </div>
   </section>
 
   <!--  Formulario Contacto -->
