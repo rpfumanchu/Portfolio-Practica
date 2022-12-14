@@ -1,70 +1,98 @@
-#skills > ul > li {
-    padding-bottom: 10px;
+#skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
 }
 
-#skills > ul > li > span {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-weight: bold;
+#skills>ul>li {
+  padding-bottom: 10px;
+  
 }
+
+#skills>ul>li>span {
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .progress-bar {
-    width: 100%;
-    height: 24px;
-    background-color: rgb(220, 220, 220);
-    border-radius: 5px;
-    display: flex;
-    font-size: 18px;
+  width: 85%;
+  height: 24px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 5px;
+  display: flex;
+  font-size: 16px;
 }
 
 .progress-bar > div {
-    border-radius: inherit;
-    height: inherit;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border-radius: inherit;
+  height: inherit;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
 }
 
 .progress-bar.titulos > div {
-    width: 87%;
+  width: 87%;
 }
 
 .progress-bar.podios > div {
-    width: 80%;
+  width: 80%;
 }
 
 .progress-bar.victorias > div {
-    width: 35%;
+  width: 35%;
 }
 
 .progress-bar.vueltas > div {
-    width: 40%;
+  width: 40%;
 }
 
 .progress-bar.poles > div {
-    width: 52%;
+  width: 52%;
 }
 
 .progress-bar.carreras > div {
-    width: 89%;
+  width: 89%;
 }
 
 .progress-bar.puntos > div {
-    width: 92%;
+  width: 92%;
 }
 
-.progress-bar > div{
-    background-color: var(--main-color);
+.progress-bar.temp > div {
+  width: 68%;
 }
 
 @keyframes progress-bar {
-    0% {
-        width: 0%;
-        background-color: rgb(75, 42, 165);
-    }
+  0% {
+    width: 0%;
+    background-color: rgb(75, 42, 165);
+  }
 }
 
-.progress-bar > div.titulos, div.podios, div.victorias, div.vueltas, div.poles, div.carreras, div.puntos{
-    animation: progress-bar 5s; 
-    
+.progress-bar > div,
+.titulos,
+.podios,
+.victorias,
+.vueltas,
+.poles,
+.carreras,
+.puntos {
+  animation: progress-bar 5s;
+}
+
+@media screen and (min-width:1024px) {
+  #skills ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #skills ul > li{
+    padding: 0px 0px 50px 0px;
+  }
+  
 }
