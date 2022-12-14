@@ -1,0 +1,33 @@
+.navbar {
+    width: 100%;
+    background-color: rgb(240, 234, 234);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px ;
+    margin-bottom: 5px;
+  }
+  
+  .list {
+    display: flex;
+  }
+  
+  .list-item a { 
+    margin-left: 10px;
+    text-decoration: none; 
+  }
+  
+  .navbar .list .list-item a, .navbar {
+    color: rgb(7, 7, 7);
+  }
+
+  @media (max-width:546px) {
+    .navbar .list .list-item a, .navbar {
+    display: none;
+   }
+  }
+
+  @media screen and (min-width:1024px) {
+    .list-item a { 
+     margin-left: 40px; 
+   }
+}

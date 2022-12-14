@@ -1,11 +1,10 @@
-.carousel-container > .carousel-slides {
-    transition: 10s;
-
-}
-
 .carousel-link {
     display: flex;
     justify-content: center;
+}
+
+.carousel-link a {
+    transition: 3s;
 }
 
 .carousel-dot {
@@ -30,12 +29,11 @@
 .carousel-slides > div  {
     display: flex;
     justify-content: center;
-    
     height: 100%;
     width: 100%;
     background-color: rgb(182, 174, 174);
 }
 
-.carousel-slides > div img {
-    transition: 50s;
-}
+
+
+    
