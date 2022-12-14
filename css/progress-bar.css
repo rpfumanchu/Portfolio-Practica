@@ -14,6 +14,7 @@
   margin-bottom: 5px;
   justify-content: center;
   align-items: center;
+  margin-left: 5px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -26,8 +27,10 @@
   display: flex;
   font-size: 16px;
 }
-
-.progress-bar > div {
+.progress-bar {
+  margin-left: 5px;
+}
+.progress-bar div {
   border-radius: inherit;
   height: inherit;
   color: white;
@@ -46,7 +49,7 @@
 }
 
 .progress-bar.victorias > div {
-  width: 35%;
+  width: 45%;
 }
 
 .progress-bar.vueltas > div {
