@@ -1,26 +1,27 @@
-.container{
-    height: 10vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10;
-    margin-bottom: 12px;
+.container {
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10;
+  margin-bottom: 12px;
 }
 
 .form-group input {
-    width: 80%;
-    border-radius: 5px;
+  width: 80%;
+  border-radius: 5px;
 }
 
 
 @media screen and (min-width:1024px) {
-    .container {
-        height: 5vh;
-        grid-template-columns: 1fr 1fr 1fr ;
-        display: flex;
-        justify-content: space-around;
-    }
-    .form-group input {
-        width: 130%;
-    }
+  .container {
+    height: 5vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form-group input {
+    width: 130%;
+  }
 }

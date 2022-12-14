@@ -1,27 +1,21 @@
 .video {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: black;
   }
-  .video1 {
-    height: 250px;
-    width: 250px;
+  .video1, .video2 {
+    height: 25vh;
+    width: 100%;
     margin-bottom: 10px;
   }
-  .video2 {
-    height: 250px;
-    width: 250px;
-  }
-  
+
   @media screen and (min-width:546px) {
-    .video1 {
-      height: 350px;
-      width: 50%;
+    .video1, .video2 {
+      height: 65vh;
     }
-    .video2 {
-      height: 350px;
-      width: 50%;
-    } 
   }
   
+  @media screen and (min-width:768px) {
+    .video1, .video2 {
+      height: 65vh;
+    }
+  }
