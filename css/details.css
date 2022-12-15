@@ -1,0 +1,47 @@
+details summary {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-bottom: 12px;
+    z-index: 1;
+}
+.details li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details img {
+    width: 23vh;
+    height: 100%;
+}
+
+.video-grid {
+    display: flex;
+    background-color: black; 
+    margin-bottom: 10px;
+
+}
+
+.video6 {
+    height: 25vh;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .details ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .details img {
+        width: 40vh;
+    }
+    .video6 {
+        height: 65vh;
+
+    }
+}

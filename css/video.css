@@ -2,20 +2,20 @@
     display: flex;
     background-color: black;
   }
-  .video1, .video2 {
+  .video1, .video2, .video6 {
     height: 25vh;
     width: 100%;
     margin-bottom: 10px;
   }
 
   @media screen and (min-width:546px) {
-    .video1, .video2 {
+    .video1, .video2, .video6 {
       height: 65vh;
     }
   }
   
   @media screen and (min-width:768px) {
-    .video1, .video2 {
+    .video1, .video2, .video6 {
       height: 65vh;
     }
   }

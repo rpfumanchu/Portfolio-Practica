@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/video.css">
   <link rel="stylesheet" href="css/progress-bar.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/details.css">
 </head>
 
 <body>
@@ -59,7 +61,6 @@
       <div id="casco8"><img src="img-cascos/casco-8.jpg" alt="casco8"></div>
       <div id="casco9"><img src="img-cascos/casco-9.jpg" alt="casco9"></div>
       <div id="casco10"><img src="img-cascos/casco-10.jpg" alt="casco10"></div>
-      <link rel="stylesheet" href="css/form.css">
     </div>
     <div class="carousel-link">
       <a href="#casco1" class="carousel-dot"></a>
@@ -85,7 +86,7 @@
     </h2>
     <header>
       <span><em>Marc Marquez</em></span>
-      <p class="texto"> <b>Marc Márquez Alentà</b> (Cervera, Lérida, 17 de febrero de 1993) es un piloto de motociclismo español que
+      <p class="texto"> <b>Marc Márquez Alentà</b> (Cervera, Lérida, 17 de febrero de 1993) es un piloto de motociclismo que
         compite en MotoGP. Ha ganado ocho títulos del Campeonato del Mundo de Motociclismo en tres categorías
         diferentes: 125cc (2010), Moto2 (2012) y seis veces en MotoGP (2013, 2014, 2016, 2017, 2018 y 2019). Desde 2013
         es piloto del equipo Repsol Honda, donde ha acumulado <strong>50 victorias y 78 podios </strong>en 105 carreras
@@ -108,7 +109,7 @@
       </h2>
     </div>
     <article>
-        <p>
+        <p class="texto">
           Le hemos visto crecer, le hemos visto luchar y le hemos visto ganar. Un portento en toda regla, el piloto del
           casco con la hormiga es una fuerza a tener en cuenta cuando está en pista. Temporada tras temporada, Marc
           Márquez se supera derribando todas las barreras y limites.
@@ -246,37 +247,55 @@
       </div>
       <button type="submit">Guardar</button>
     </form>
-    <div>
-      <div class="carousel-link">
-        <a href="index.html" class="carousel-dot"></a>
-        <a href="#biografia" class="carousel-dot"></a>
-        <a href="#palmares" class="carousel-dot"></a>
-        <a href="#top-5" class="carousel-dot"></a>
-        <a href="#contacto" class="carousel-dot"></a>
-      </div>
-      <details>
-        <summary class="details">Mis mejores salvadas.</summary>
-        <div>
-          <video src="/videos/salvada.mp4" controls width="250" height="250" alt="video salvada">
-          </video>
-        </div>
-        <div>
-          <img src="/imagenes-details/img1.jpg" alt="salvadas1">
-          <img src="/imagenes-details/img2.jpg" alt="salvadas2">
-          <img src="/imagenes-details/img3.jpg" alt="salvadas3">
-          <img src="/imagenes-details/img4.jpg" alt="salvadas4">
-          <img src="/imagenes-details/img5.jpg" alt="salvadas5">
-          <img src="/imagenes-details/img6.jpg" alt="salvadas6">
-          <img src="/imagenes-details/img7.jpg" alt="salvadas7">
-          <img src="/imagenes-details/img8.jpg" alt="salvadas8">
-          <img src="/imagenes-details/img9.jpg" alt="salvadas9">
-          <img src="/imagenes-details/img10.jpg" alt="salvadas10">
-          <img src="/imagenes-details/img11.jpg" alt="salvadas11">
-        </div>
-
-      </details>
+  </section>  
+  <div class="carousel-link">
+    <a href="index.html" class="carousel-dot"></a>
+    <a href="#biografia" class="carousel-dot"></a>
+    <a href="#palmares" class="carousel-dot"></a>
+    <a href="#top-5" class="carousel-dot"></a>
+    <a href="#contacto" class="carousel-dot"></a>
+  </div>
+  <details>
+    <summary >Mis mejores salvadas.</summary>
+    <div class="video-grid">
+      <video class="video6" src="/videos/salvada.mp4" controls width="250" height="250" alt="video salvada">
+      </video>
     </div>
-  </section>
+    <section class="details">
+      <ul>
+        <li>
+          <img src="/imagenes-details/img1.jpg" alt="salvadas1">
+        </li>
+        <li>
+          <img src="/imagenes-details/img2.jpg" alt="salvadas2">
+        </li>
+        <li>
+          <img src="/imagenes-details/img3.jpg" alt="salvadas3">
+        </li>
+        <li>
+          <img src="/imagenes-details/img4.jpg" alt="salvadas4">
+        </li>
+        <li><img src="/imagenes-details/img5.jpg" alt="salvadas5"></li>
+        <li>
+          <img src="/imagenes-details/img6.jpg" alt="salvadas6">
+        </li>
+        <li>
+          <img src="/imagenes-details/img7.jpg" alt="salvadas7">
+        </li>
+        <li>
+          <img src="/imagenes-details/img8.jpg" alt="salvadas8">
+        </li>
+        <li>
+          <img src="/imagenes-details/img9.jpg" alt="salvadas9">
+        </li>
+        <li>
+          <img src="/imagenes-details/img11.jpg" alt="salvadas11">
+        </li>
+      </ul>
+    </section>
+  </details>
+
+  
 
   <!-- footer -->
   <!-- no quiero que abandonen mi pagina ni tampoco dejar rastro en las páginas externas-->
