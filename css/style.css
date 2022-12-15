@@ -14,14 +14,15 @@ body > * {
 
 .title {
   width: 100%;
-  background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 0px 10px 0px;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 8px;
   margin-bottom: 5px;
+  background-color: var(--main-color);
+  color: white;
 }
 
 .logo {
