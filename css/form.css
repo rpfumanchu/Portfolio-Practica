@@ -1,27 +1,88 @@
+.form {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
 .container {
   height: 10vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10;
+  gap: 10px;
   margin-bottom: 12px;
 }
 
 .form-group input {
-  width: 80%;
+  width: 9em;
   border-radius: 5px;
 }
 
+.title-radio {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+
+.container-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px; 
+}
+
+.container-radio div {
+  margin-bottom: 10px;
+}
+.container-radio label {
+  margin-left: 10px;
+
+}
+
+.fan {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.fan > input {
+  margin-left: 20px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+#desc {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 178px;
+  border-radius: 2px;
+}
+
+.button {
+  background-color: darkgreen;
+  border-radius: 10px;
+  padding: 5px 5px;
+  color: white;
+}
+
+@media screen and (min-width:768px) {
+  .form-group input {
+    width: 50%;
+  }
+}
 
 @media screen and (min-width:1024px) {
   .container {
     height: 5vh;
     grid-template-columns: 1fr 1fr 1fr;
-    display: flex;
-    justify-content: space-around;
+    
+    
   }
 
   .form-group input {
-    width: 130%;
+    width: 60%;
   }
+  
 }

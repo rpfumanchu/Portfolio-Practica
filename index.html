@@ -1,313 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica-PortFolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/video.css" />
+    <link rel="stylesheet" href="css/progress-bar.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/details.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Práctica-PortFolio</title>
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/carousel.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/video.css">
-  <link rel="stylesheet" href="css/progress-bar.css">
-  <link rel="stylesheet" href="css/form.css">
-  <link rel="stylesheet" href="css/details.css">
-</head>
-
-<body>
-  
-  <div class="title">
-    <img class="logo" src="/imagenes/icono.jpg" alt="icono">
-    <h1>Marc Marquez</h1>
-    <img class="logo" src="/imagenes/icono.jpg" alt="icono">
-  </div>
-
-  <!-- barra de navegación -->
-  <nav class="navbar">
-    <h4>Busqueda</h4>
-    <ul class="list">
-      <li class="list-item"><a href="#biografia">Biografía</a></li>
-      <li class="list-item"><a href="#palmares">Palmares</a></li>
-      <li class="list-item"><a href="#top-5">Top-5</a></li>
-      <li class="list-item"><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <!-- cabecera tres imagenes distintas con distintas resoluciones para cada imagen -->
-  <header>
-    <picture class="foto">
-      <source media="(min-width:1024px )" srcset="
-      imagenes/cabecera1.jpg" alt="cabecera">
-      <source media="(min-width:546px)" srcset="
-      imagenes/cabecera_467.jpg" alt="cabecera-mediana">
-      <source media="(max-width:545px )" srcset="
-      imagenes/cabecera-pequeña3.png" alt="imagen pequeña">
-      <img src="
-      /imagenes/cabecera1.jpg " alt="imagen predeterminada">
-    </picture>
-  </header>
-  <section class="carousel-container">
-    <div class="carousel-slides">
-      <div id="casco1"><img src="img-cascos/casco1.jpg" alt="casco1"></div>
-      <div id="casco2"><img src="img-cascos/casco-2.jpg" alt="casco2"></div>
-      <div id="casco3"><img src="img-cascos/casco-3.jpg" alt="casco3"></div>
-      <div id="casco4"><img src="img-cascos/casco-4.jpg" alt="casco4"></div>
-      <div id="casco5"><img src="img-cascos/casco-5.jpg" alt="casco5"></div>
-      <div id="casco6"><img src="img-cascos/casco-6.jpg" alt="casco6"></div>
-      <div id="casco7"><img src="img-cascos/casco-7.jpg" alt="casco7"></div>
-      <div id="casco8"><img src="img-cascos/casco-8.jpg" alt="casco8"></div>
-      <div id="casco9"><img src="img-cascos/casco-9.jpg" alt="casco9"></div>
-      <div id="casco10"><img src="img-cascos/casco-10.jpg" alt="casco10"></div>
-    </div>
-    <div class="carousel-link">
-      <a href="#casco1" class="carousel-dot"></a>
-      <a href="#casco2" class="carousel-dot"></a>
-      <a href="#casco3" class="carousel-dot"></a>
-      <a href="#casco4" class="carousel-dot"></a>
-      <a href="#casco5" class="carousel-dot"></a>
-      <a href="#casco6" class="carousel-dot"></a>
-      <a href="#casco7" class="carousel-dot"></a>
-      <a href="#casco8" class="carousel-dot"></a>
-      <a href="#casco9" class="carousel-dot"></a>
-      <a href="#casco10" class="carousel-dot"></a>
+  <body>
+    <div class="title">
+      <img class="logo" src="/imagenes/icono.jpg" alt="icono" />
+      <h1>Marc Marquez</h1>
+      <img class="logo" src="/imagenes/icono.jpg" alt="icono" />
     </div>
 
+    <!-- barra de navegación -->
+    <nav class="navbar">
+      <h4>Busqueda</h4>
+      <ul class="list">
+        <li class="list-item"><a href="#biografia">Biografía</a></li>
+        <li class="list-item"><a href="#palmares">Palmares</a></li>
+        <li class="list-item"><a href="#top-5">Top-5</a></li>
+        <li class="list-item"><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
 
-
-  </section>
-
-  <!-- sección  biografía -->
-  <section id="biografia">
-    <h2>
-      <strong>Biografía</strong>
-    </h2>
+    <!-- cabecera tres imagenes distintas con distintas resoluciones para cada imagen -->
     <header>
-      <span><em>Marc Marquez</em></span>
-      <p class="texto"> <b>Marc Márquez Alentà</b> (Cervera, Lérida, 17 de febrero de 1993) es un piloto de motociclismo que
-        compite en MotoGP. Ha ganado ocho títulos del Campeonato del Mundo de Motociclismo en tres categorías
-        diferentes: 125cc (2010), Moto2 (2012) y seis veces en MotoGP (2013, 2014, 2016, 2017, 2018 y 2019). Desde 2013
-        es piloto del equipo Repsol Honda, donde ha acumulado <strong>50 victorias y 78 podios </strong>en 105 carreras
-        disputadas. En febrero de 2020 extendió su contrato con Honda hasta 2024</p>
+      <picture class="foto">
+        <source
+          media="(min-width:1024px )"
+          srcset="imagenes/cabecera1.jpg"
+          alt="cabecera" />
+        <source
+          media="(min-width:546px)"
+          srcset="imagenes/cabecera_467.jpg"
+          alt="cabecera-mediana" />
+        <source
+          media="(max-width:545px )"
+          srcset="imagenes/cabecera-pequeña3.png"
+          alt="imagen pequeña" />
+        <img src="imagenes/cabecera1.jpg " alt="imagen predeterminada" />
+      </picture>
     </header>
-  </section>
-  <div class="carousel-link">
-    <a href="index.html" class="carousel-dot"></a>
-    <a href="#biografia" class="carousel-dot"></a>
-    <a href="#palmares" class="carousel-dot"></a>
-    <a href="#top-5" class="carousel-dot"></a>
-    <a href="#contacto" class="carousel-dot"></a>
-  </div>
-
-  <!-- sección Palmares -->
-  <section id="palmares">
-    <div>
+    <section class="carousel-container">
+      <div class="carousel-slides">
+        <div id="casco1">
+          <img src="img-cascos/casco1.jpg" alt="casco1" />
+        </div>
+        <div id="casco2">
+          <img src="img-cascos/casco-2.jpg" alt="casco2" />
+        </div>
+        <div id="casco3">
+          <img src="img-cascos/casco-3.jpg" alt="casco3" />
+        </div>
+        <div id="casco4">
+          <img src="img-cascos/casco-4.jpg" alt="casco4" />
+        </div>
+        <div id="casco5">
+          <img src="img-cascos/casco-5.jpg" alt="casco5" />
+        </div>
+        <div id="casco6">
+          <img src="img-cascos/casco-6.jpg" alt="casco6" />
+        </div>
+        <div id="casco7">
+          <img src="img-cascos/casco-7.jpg" alt="casco7" />
+        </div>
+        <div id="casco8">
+          <img src="img-cascos/casco-8.jpg" alt="casco8" />
+        </div>
+        <div id="casco9">
+          <img src="img-cascos/casco-9.jpg" alt="casco9" />
+        </div>
+        <div id="casco10">
+          <img src="img-cascos/casco-10.jpg" alt="casco10" />
+        </div>
+      </div>
+      <div class="carousel-link">
+        <a href="#casco1" class="carousel-dot"></a>
+        <a href="#casco2" class="carousel-dot"></a>
+        <a href="#casco3" class="carousel-dot"></a>
+        <a href="#casco4" class="carousel-dot"></a>
+        <a href="#casco5" class="carousel-dot"></a>
+        <a href="#casco6" class="carousel-dot"></a>
+        <a href="#casco7" class="carousel-dot"></a>
+        <a href="#casco8" class="carousel-dot"></a>
+        <a href="#casco9" class="carousel-dot"></a>
+        <a href="#casco10" class="carousel-dot"></a>
+      </div>
+    </section>
+    <!-- sección  biografía -->
+    <section id="biografia">
       <h2>
-        <strong>Palmares</strong>
+        <strong>Biografía</strong>
       </h2>
-    </div>
-    <article>
+      <header>
+        <span><em>Marc Marquez</em></span>
         <p class="texto">
-          Le hemos visto crecer, le hemos visto luchar y le hemos visto ganar. Un portento en toda regla, el piloto del
-          casco con la hormiga es una fuerza a tener en cuenta cuando está en pista. Temporada tras temporada, Marc
-          Márquez se supera derribando todas las barreras y limites.
+          <b>Marc Márquez Alentà</b> (Cervera, Lérida, 17 de febrero de 1993) es
+          un piloto de motociclismo que compite en MotoGP. Ha ganado ocho
+          títulos del Campeonato del Mundo de Motociclismo en tres categorías
+          diferentes: 125cc (2010), Moto2 (2012) y seis veces en MotoGP (2013,
+          2014, 2016, 2017, 2018 y 2019). Desde 2013 es piloto del equipo Repsol
+          Honda, donde ha acumulado <strong>50 victorias y 78 podios </strong>en
+          105 carreras disputadas. En febrero de 2020 extendió su contrato con
+          Honda hasta 2024
         </p>
-    </article>
-    <!-- con estos datos voy hacer las skill de barras progresivas 
+      </header>
+    </section>
+    <div class="carousel-link">
+      <a href="index.html" class="carousel-dot"></a>
+      <a href="#biografia" class="carousel-dot"></a>
+      <a href="#palmares" class="carousel-dot"></a>
+      <a href="#top-5" class="carousel-dot"></a>
+      <a href="#contacto" class="carousel-dot"></a>
+    </div>
+
+    <!-- sección Palmares -->
+    <section id="palmares">
+      <div>
+        <h2>
+          <strong>Palmares</strong>
+        </h2>
+      </div>
+      <article>
+        <p class="texto">
+          Le hemos visto crecer, le hemos visto luchar y le hemos visto ganar.
+          Un portento en toda regla, el piloto del casco con la hormiga es una
+          fuerza a tener en cuenta cuando está en pista. Temporada tras
+          temporada, Marc Márquez se supera derribando todas las barreras y
+          limites.
+        </p>
+      </article>
+      <!-- con estos datos voy hacer las skill de barras progresivas 
     8titulos, 139 podios, 85 victoris, 91 poles, 75 vueltas rápidas, 282 carreras, puntos totales 3463-->
-    <section id="skills">
-      <h3>Estadisticas</h3>
-      <ul>
-        <li>
-          <span>Mundiales 8</span>
-          <div class="progress-bar titulos">
-            <div class="titulos">titulos</div>
-          </div> 
-        </li>
-        <li>
-          <span>Podios 139</span>
-          <div class="progress-bar podios">
-            <div class="podios">podios</div>
-          </div>
-        </li>
-        <li>
-          <span>Victorias 85</span>
-          <div class="progress-bar victorias">
-            <div class="victorias">victorias</div>
-          </div>
-        </li>
-        <li>
-          <span>Vueltas rápidas 75</span>
-          <div class="progress-bar vueltas">
-            <div class="vueltas"> fast-lap</div>
-          </div>
-        </li>
-        <li>
-          <span>Poles 91</span>
-          <div class="progress-bar poles">
-            <div class="poles">poles</div>
-          </div>
-        </li>
-        <li>
-          <span>Carreras 282</span>
-          <div class="progress-bar carreras">
-            <div class="carreras">carreras</div>
-          </div>
-        </li>
-        <li>
-          <span>Puntos 3463</span>
-          <div class="progress-bar puntos">
-            <div class="puntos">puntos</div>
-          </div>
-        </li>
-        <li>
-          <span>Temporadas</span>
-          <div class="progress-bar temp">
-            <div class="temp">16</div>
-          </div>
-        </li>
-      </ul>
+      <section id="skills">
+        <h3>Estadisticas</h3>
+        <ul>
+          <li>
+            <span>Mundiales 8</span>
+            <div class="progress-bar titulos">
+              <div class="titulos">titulos</div>
+            </div>
+          </li>
+          <li>
+            <span>Podios 139</span>
+            <div class="progress-bar podios">
+              <div class="podios">podios</div>
+            </div>
+          </li>
+          <li>
+            <span>Victorias 85</span>
+            <div class="progress-bar victorias">
+              <div class="victorias">victorias</div>
+            </div>
+          </li>
+          <li>
+            <span>Vueltas rápidas 75</span>
+            <div class="progress-bar vueltas">
+              <div class="vueltas">fast-lap</div>
+            </div>
+          </li>
+          <li>
+            <span>Poles 91</span>
+            <div class="progress-bar poles">
+              <div class="poles">poles</div>
+            </div>
+          </li>
+          <li>
+            <span>Carreras 282</span>
+            <div class="progress-bar carreras">
+              <div class="carreras">carreras</div>
+            </div>
+          </li>
+          <li>
+            <span>Puntos 3463</span>
+            <div class="progress-bar puntos">
+              <div class="puntos">puntos</div>
+            </div>
+          </li>
+          <li>
+            <span>Temporadas</span>
+            <div class="progress-bar temp">
+              <div class="temp">16</div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </section>
-  </section>
-  <div class="carousel-link">
-    <a href="index.html" class="carousel-dot"></a>
-    <a href="#biografia" class="carousel-dot"></a>
-    <a href="#palmares" class="carousel-dot"></a>
-    <a href="#top-5" class="carousel-dot"></a>
-    <a href="#contacto" class="carousel-dot"></a>
-  </div>
+    <div class="carousel-link">
+      <a href="index.html" class="carousel-dot"></a>
+      <a href="#biografia" class="carousel-dot"></a>
+      <a href="#palmares" class="carousel-dot"></a>
+      <a href="#top-5" class="carousel-dot"></a>
+      <a href="#contacto" class="carousel-dot"></a>
+    </div>
 
-  <!-- sección videos -->
-  <section class="top" id="top-5">
-    <div>
-      <h2>
-        <strong>Top-5</strong>
-      </h2>
-    </div>
-    <div class="video">
-      <video class="video1" controls
-      src="/videos/jerez.mp4" alt="video jerez">
-      </video>
-      <video class="video2" controls
-      src="/videos/sacacorchos.mp4" alt="video sacacorchos">
-      </video>
-    </div>
-  </section>
-  <div class="carousel-link">
-    <a href="index.html" class="carousel-dot"></a>
-    <a href="#biografia" class="carousel-dot"></a>
-    <a href="#palmares" class="carousel-dot"></a>
-    <a href="#top-5" class="carousel-dot"></a>
-    <a href="#contacto" class="carousel-dot"></a>
-  </div>
-
-  <!--  Formulario Contacto -->
-  <section id="contacto">
-    <div>
-      <h2>
-        <strong>Contacto</strong>
-      </h2>
-    </div>
-    <form action="registro.html" method="post">
-      <div class="container">
-        <div class="form-group">
-          <label for="nombre"></label>
-          <input required name="nombre" id="nombre" type="text" placeholder="Nombre">
-        </div>
-        <div class="form-group">
-          <label for="apellido"></label>
-          <input required name="apellido" id="apellido" type="text" placeholder="Apellidos">
-        </div>
-        <div class="form-group">
-          <label for="phone"></label>
-          <input name="phone" id="phone" type="tel" placeholder="Teléfono">
-        </div>
-      </div>
-      <fieldset>
-        <legend>¿Como me conociste?</legend>
-        <label for="face">Facebook</label>
-        <input type="radio" id="face" name="como" value="facebook" checked>
-        <label for="inst">Instagram</label>
-        <input type="radio" name="como" id="inst" value="instagram">
-        <label for="twi">Twitter</label>
-        <input type="radio" name="como" id="twi" value="twitter">
-        <label for="dz">Danz</label>
-        <input type="radio" name="como" id="dz" value="danz">
-      </fieldset>
-      <!-- expresión regular para obligar que el formato sea @username-->
+    <!-- sección videos -->
+    <section class="top" id="top-5">
       <div>
-        <label for="club">Fanclub</label>
-        <input required type="text" name="fanclub" id="club" placeholder="@usuario" pattern="^@[^\s]+">
+        <h2>
+          <strong>Top-5</strong>
+        </h2>
       </div>
-      <div>
-        <label for="desc">Opinión</label>
-        <textarea required maxlength="180" name="motivo" id="desc"></textarea>
+      <div class="video">
+        <video
+          class="video1"
+          controls
+          src="/videos/jerez.mp4"
+          alt="video jerez"></video>
+        <video
+          class="video2"
+          controls
+          src="/videos/sacacorchos.mp4"
+          alt="video sacacorchos"></video>
       </div>
-      <button type="submit">Guardar</button>
-    </form>
-  </section>  
-  <div class="carousel-link">
-    <a href="index.html" class="carousel-dot"></a>
-    <a href="#biografia" class="carousel-dot"></a>
-    <a href="#palmares" class="carousel-dot"></a>
-    <a href="#top-5" class="carousel-dot"></a>
-    <a href="#contacto" class="carousel-dot"></a>
-  </div>
-  <details>
-    <summary >Mis mejores salvadas.</summary>
-    <div class="video-grid">
-      <video class="video6" src="/videos/salvada.mp4" controls width="250" height="250" alt="video salvada">
-      </video>
-    </div>
-    <section class="details">
-      <ul>
-        <li>
-          <img src="/imagenes-details/img1.jpg" alt="salvadas1">
-        </li>
-        <li>
-          <img src="/imagenes-details/img2.jpg" alt="salvadas2">
-        </li>
-        <li>
-          <img src="/imagenes-details/img3.jpg" alt="salvadas3">
-        </li>
-        <li>
-          <img src="/imagenes-details/img4.jpg" alt="salvadas4">
-        </li>
-        <li><img src="/imagenes-details/img5.jpg" alt="salvadas5"></li>
-        <li>
-          <img src="/imagenes-details/img6.jpg" alt="salvadas6">
-        </li>
-        <li>
-          <img src="/imagenes-details/img7.jpg" alt="salvadas7">
-        </li>
-        <li>
-          <img src="/imagenes-details/img8.jpg" alt="salvadas8">
-        </li>
-        <li>
-          <img src="/imagenes-details/img9.jpg" alt="salvadas9">
-        </li>
-        <li>
-          <img src="/imagenes-details/img11.jpg" alt="salvadas11">
-        </li>
-      </ul>
     </section>
-  </details>
-
-  
-
-  <!-- footer -->
-  <!-- no quiero que abandonen mi pagina ni tampoco dejar rastro en las páginas externas-->
-  <footer>
-    <p>Marc Marquez®. Todos los derechos reservados 2022</p>
-    <div>
-      <a href="https://www.instagram.com/marcmarquez93/" target="_blank" rel=" noopener noreferrer ">Instagram</a>
-      <a href="https://es-es.facebook.com/marcmarquez1993/" target="_blank" rel=" noopener noreferrer ">Facebook</a>
-      <a href="https://twitter.com/marcmarquez93" target="_blank" rel=" noopener noreferrer ">Twitter</a>
+    <div class="carousel-link">
+      <a href="index.html" class="carousel-dot"></a>
+      <a href="#biografia" class="carousel-dot"></a>
+      <a href="#palmares" class="carousel-dot"></a>
+      <a href="#top-5" class="carousel-dot"></a>
+      <a href="#contacto" class="carousel-dot"></a>
     </div>
-  </footer>
 
-</body>
+    <!--  Formulario Contacto -->
+    <section id="contacto">
+      <div>
+        <h2>
+          <strong>Contacto</strong>
+        </h2>
+      </div>
+      <form class="form" action="registro.html" method="post">
+        <div class="container">
+          <div class="form-group">
+            <label for="nombre"></label>
+            <input
+              required
+              name="nombre"
+              id="nombre"
+              type="text"
+              placeholder="Nombre" />
+          </div>
+          <div class="form-group">
+            <label for="apellido"></label>
+            <input
+              required
+              name="apellido"
+              id="apellido"
+              type="text"
+              placeholder="Apellidos" />
+          </div>
+          <div class="form-group">
+            <label for="phone"></label>
+            <input name="phone" id="phone" type="tel" placeholder="Teléfono" />
+          </div>
+        </div>
+        <fieldset class="container-form">
+          <legend class="title-radio">¿Como me conociste?</legend>
+          <section class="container-radio">
+            <div>
+              <input 
+              type="radio" 
+              name="como" 
+              id="face"
+              value="facebook" checked />
+              <label 
+              for="face">Facebook</label>
+            </div>
+            <div>
+              <input 
+              type="radio" 
+              name="como" 
+              id="inst" 
+              value="instagram" /><label 
+              for="inst">Instagram</label>
+            </div>
+            <div>
+              <input 
+              type="radio" 
+              name="como" 
+              id="twi" 
+              value="twitter" />
+              <label 
+              for="twi">Twitter</label>
+            </div>
+            <div>
+              <input 
+              type="radio" 
+              name="como" 
+              id="dz" 
+              value="danz" />
+              <label 
+              for="dz">Danz</label>
+            </div>
+          </section>
+        </fieldset>
+        <!-- expresión regular para obligar que el formato sea @username-->
+        <div class="fan">
+          <label for="club">Fanclub</label>
+          <input
+            required
+            type="text"
+            name="fanclub"
+            id="club"
+            placeholder="@usuario"
+            pattern="^@[^\s]+" />
+        </div>
+        <div class="fan">
+          <label for="desc">Opinión</label>
+          <textarea required maxlength="180" name="motivo" id="desc"></textarea>
+        </div>
+        <button class="button" type="submit">Guardar</button>
+      </form>
+    </section>
+    <div class="carousel-link">
+      <a href="index.html" class="carousel-dot"></a>
+      <a href="#biografia" class="carousel-dot"></a>
+      <a href="#palmares" class="carousel-dot"></a>
+      <a href="#top-5" class="carousel-dot"></a>
+      <a href="#contacto" class="carousel-dot"></a>
+    </div>
+    <details>
+      <summary>Mis mejores salvadas.</summary>
+      <div class="video-grid">
+        <video
+          class="video6"
+          src="/videos/salvada.mp4"
+          controls
+          width="250"
+          height="250"
+          alt="video salvada"></video>
+      </div>
+      <section class="details">
+        <ul>
+          <li>
+            <img src="/imagenes-details/img1.jpg" ="salvadas1" />
+          </li>
+          <li>
+            <img src="/imagenes-details/img2.jpg" ="salvadas2" />
+          </li>
+          <li>
+            <img src="/imagenes-details/img3.jpg" ="salvadas3" />
+          </li>
+          <li>
+            <img src="/imagenes-details/img4.jpg" alt="salvadas4" />
+          </li>
+          <li><img src="/imagenes-details/img5.jpg" alt="salvadas5" /></li>
+          <li>
+            <img src="/imagenes-details/img6.jpg" alt="salvadas6" />
+          </li>
+          <li>
+            <img src="/imagenes-details/img7.jpg" alt="salvadas7" />
+          </li>
+          <li>
+            <img src="/imagenes-details/img8.jpg" ="salvadas8" />
+          </li>
+          <li>
+            <img src="/imagenes-details/img9.jpg" alt="salvadas9" />
+          </li>
+          <li>
+            <img src="/imagenes-details/img11.jpg" alt="salvadas11" />
+          </li>
+        </ul>
+      </section>
+    </details>
 
+    <!-- footer -->
+    <!-- no quiero que abandonen mi pagina ni tampoco dejar rastro en las páginas externas-->
+    <footer>
+      <p>Marc Marquez®. Todos los derechos reservados 2022</p>
+      <div>
+        <a
+          href="https://www.instagram.com/marcmarquez93/"
+          target="_blank"
+          rel=" noopener noreferrer "
+          >Instagram
+        </a>
+        <a
+          href="https://es-es.facebook.com/marcmarquez1993/"
+          target="_blank"
+          rel=" noopener noreferrer "
+          >Facebook
+        </a>
+        <a
+          href="https://twitter.com/marcmarquez93"
+          target="_blank"
+          rel=" noopener noreferrer "
+          >Twitter
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
