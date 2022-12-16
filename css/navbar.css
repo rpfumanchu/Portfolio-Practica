@@ -1,33 +1,92 @@
+label[for="menu"],
+#menu {
+  display: none;
+}
+
 .navbar {
-    width: 100%;
-    background-color: whitesmoke;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px ;
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+  position: fixed;
+  z-index: 1;
+}
+.list {
+  display: flex;
+}
+
+.list-item a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.navbar .list .list-item a,
+.navbar {
+  color: rgb(7, 7, 7);
+}
+
+ul.list > li > a:hover {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+/* menu burguer*/
+/* con [ seleccionamos una propiedad]*/
+/* uso before y after me he tenido que documentar*/
+@media only screen and (max-width: 546px) {
+  label[for="menu"] {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 20px ;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
     margin-bottom: 5px;
-  }
-  
-  .list {
-    display: flex;
-  }
-  
-  .list-item a { 
-    margin-left: 10px;
-    text-decoration: none; 
-  }
-  
-  .navbar .list .list-item a, .navbar {
-    color: rgb(7, 7, 7);
+    background-color: white;
+    border: 1px solid #4b4b4b;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
   }
 
-  @media (max-width:546px) {
-    .navbar .list .list-item a, .navbar {
+  label[for="menu"]:before {
+    content: " ";
+    border-top: 1px solid #4b4b4b;
+    display: inline-block;
+    height: 5px;
+    width: 100%;
+  }
+
+  label[for="menu"]:after {
+    content: " ";
+    border-top: 1px solid #4b4b4b;
+    border-bottom: 1px solid #4b4b4b;
+    display: inline-block;
+    height: 5px;
+    width: 100%;
+  }
+
+  label[for="menu"]:hover {
+    background-color: whitesmoke;
+  }
+
+  ul.list {
     display: none;
-   }
   }
 
-  @media screen and (min-width:1024px) {
-    .list-item a { 
-     margin-left: 40px; 
-   }
+  #menu:checked + label + ul.list {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    padding: 5px;
+  }
+
+  #menu:checked + label + ul.list > li {
+    margin: 5px;
+  }
+  h4 {
+    display: none;
+  }
 }

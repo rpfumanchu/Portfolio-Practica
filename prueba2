@@ -1,0 +1,83 @@
+label[for="menu"],
+#menu {
+    display: none;
+}
+
+.navbar {
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px ;
+  margin-bottom: 5px;
+}
+.list {
+  display: flex;
+}
+
+.list-item a { 
+  margin-left: 10px;
+  text-decoration: none; 
+}
+
+.navbar .list .list-item a, .navbar {
+  color: rgb(7, 7, 7);
+}
+
+ul.list > li > a:hover {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+@media only screen and (max-width: 546px) {
+    label[for="menu"] {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        margin-bottom: 5px;
+        background-color: white;
+        border: 1px solid #4b4b4b;
+        border-radius: 5px;
+        padding: 5px;
+        align-items: center;
+    }
+
+    label[for="menu"]:before {
+        content: " ";
+        border-top: 1px solid #4b4b4b;
+        display: inline-block;
+        height: 5px;
+        width: 100%;
+    }
+
+    label[for="menu"]:after {
+        content: " ";
+        border-top: 1px solid #4b4b4b;
+        border-bottom: 1px solid #4b4b4b;
+        display: inline-block;
+        height: 5px;
+        width: 100%;
+    }
+
+    label[for="menu"]:hover {
+        background-color: whitesmoke;
+    }
+
+    ul.list {
+        display: none;
+    }
+
+    #menu:checked + label + ul.list {
+        display: flex;
+        flex-direction: column;
+        background-color: gainsboro;
+        padding: 5px;
+    }
+
+    #menu:checked + label + ul.list > li {
+        margin: 5px;
+    }
+}

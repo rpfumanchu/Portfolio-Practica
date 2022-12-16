@@ -18,15 +18,12 @@
   </head>
 
   <body>
-    <div class="title">
-      <img class="logo" src="/imagenes/icono.jpg" alt="icono" />
-      <h1>Marc Márquez</h1>
-      <img class="logo" src="/imagenes/icono.jpg" alt="icono" />
-    </div>
-
     <!-- barra de navegación -->
+    <!-- pongo un input y un label para poder hacer el menu burguer, el input tiene que ser checkbox-->
     <nav class="navbar">
       <h4>Busqueda</h4>
+      <input id="menu" type="checkbox" />
+      <label for="menu"></label>
       <ul class="list">
         <li class="list-item"><a href="#biografia">Biografía</a></li>
         <li class="list-item"><a href="#palmares">Palmares</a></li>
@@ -34,8 +31,14 @@
         <li class="list-item"><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+    
+    <div class="title">
+      <img class="logo" src="/imagenes/icono.jpg" alt="icono" />
+      <h1>Marc Márquez</h1>
+      <img class="logo" src="/imagenes/icono.jpg" alt="icono" />
+    </div>
 
-    <!-- cabecera tres imagenes distintas con distintas resoluciones para cada imagen -->
+    <!-- cabecera tres imagenes distintas  -->
     <header>
       <picture class="foto">
         <source
@@ -53,6 +56,8 @@
         <img src="imagenes/cabecera1.jpg " alt="imagen predeterminada" />
       </picture>
     </header>
+
+    <!-- carousel de imagene-->
     <section class="carousel-container">
       <div class="carousel-slides">
         <div id="casco1">
@@ -368,7 +373,7 @@
     <!-- footer -->
     <!-- no quiero que abandonen mi pagina ni tampoco dejar rastro en las páginas externas-->
     <footer class="footer">
-      <p>Marc Márquez®. Todos los derechos reservados 2022</p>
+      <p class="p">Marc Márquez®. Todos los derechos reservados 2022</p>
       <div class="social-link">
         <a
           href="https://www.instagram.com/marcmarquez93"
