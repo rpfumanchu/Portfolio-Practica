@@ -6,7 +6,7 @@
  
 body {
   background-color: whitesmoke;
-  margin: 0px;
+  margin: 0px ;
 }
 body > * {
   margin-bottom: 10px;
@@ -17,14 +17,11 @@ body > * {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 58px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
   margin-bottom: 10px;
   background-color: var(--main-color);
   color: white;
   position: static;
-  
-  
-  
 }
 
 .logo {
@@ -84,9 +81,7 @@ header img {
 }
 
 @media screen and (min-width:546px) {
-  .title {
-    padding: 43px 0px 10px 0px;
-  }
+  
 
   h1 {
     padding: 0px 80px 0px 80px;
@@ -97,7 +92,10 @@ header img {
     width: 100%;
    }
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
+  .title {
+    padding: 40px 0px 10px 0px;
+  }
   header img {
     height: 60vh;
     width: 100%;
