@@ -20,6 +20,7 @@
 .form-group input {
   width: 9em;
   border-radius: 5px;
+
 }
 
 .title-radio {
@@ -83,7 +84,17 @@
   .form-group input {
     width: 60%;
     padding: 5px 10px;
+    font-size: 25px;
   }
+  .button {
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+  .fan > input {
+    font-size: 25px;
+  }
+  
 
   
   
