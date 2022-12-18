@@ -70,6 +70,7 @@
   width: 68%;
 }
 
+/* animacion de las barras de progreso */
 @keyframes progress-bar {
   0% {
     width: 0%;
@@ -95,7 +96,7 @@
 
 @media screen and (min-width: 1024px) {
   .progress-bar {
-    height: 30;
+    height: 30px;
     font-size: 26px;
   }
   #skills ul {

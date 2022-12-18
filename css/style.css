@@ -41,6 +41,12 @@ h2 {
   font-weight: bold;
   margin-bottom: 10px;
 }
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 0 5px;
+  margin-bottom: 10px;
+
+}
 
 .separator {
   margin: 20px 15%;

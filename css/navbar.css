@@ -4,11 +4,13 @@
 
 .navbar {
   display: inline-flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
   padding: 5px 10px;
   position: fixed;
   right: 7px;
   top: 78px;
+  z-index: 9999;
 }
 .list {
   display: none;
@@ -85,18 +87,20 @@ h4 {
   .navbar {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     right: 0px;
     top: 0px;
     background-color: gainsboro;
+    
   }
 
   .list-item > a {
     text-decoration: none;
     color: #4b4b4b;
     height: 30px;
-    margin: 0 38px;
-    background-color: white;
+    padding: 2px 12px;
+    margin: 0 20px;
     transition: none linear 0.50s;
     transition-property: background-color, color;
     border-radius: 6px;
