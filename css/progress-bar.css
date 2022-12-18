@@ -1,15 +1,13 @@
 #skills ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25% 25% 25% 25%;
 }
 
-#skills>ul>li {
-  padding-bottom: 10px;
-  
+#skills > ul > li {
+  padding: 0 20px 10px 0;
 }
 
-#skills>ul>li>span {
+#skills > ul > li > span {
   display: inline-block;
   margin-bottom: 5px;
   justify-content: center;
@@ -23,15 +21,13 @@
   width: 85%;
   height: 24px;
   display: flex;
-  background-color: whitesmoke;
+  background-color: gainsboro;
   border-radius: 5px;
   font-size: 16px;
-  
-}
-.progress-bar {
   margin-left: 5px;
+  width: 100%;
 }
-.progress-bar div {
+.progress-bar > div {
   border-radius: inherit;
   height: inherit;
   color: white;
@@ -81,32 +77,34 @@
   }
 }
 
-.progress-bar > div,
-.titulos,
-.podios,
-.victorias,
-.vueltas,
-.poles,
-.carreras,
-.puntos {
+/* uso webkit para buscadores mas antigos y -moz-, -o-, para asegurar funcionamiento en mozilla y opera*/
+.progress-bar > div {
+  -webkit-animation: progress-bar 4s;
   animation: progress-bar 4s;
+  -moz-animation: progress-bar 4s;
+  -o-animation: progress-bar 4s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: 3;
+  -o-animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
   animation-iteration-count: 3;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .progress-bar {
-    height: 40px;
+    height: 30;
     font-size: 26px;
   }
   #skills ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25% 25% 25% 25%;
   }
-  #skills ul > li{
-    padding: 0px 0px 90px 0px;
+  #skills ul > li {
+    padding: 0px 20px 30px 0px;
   }
-  #skills>ul>li>span {
+  #skills > ul > li > span {
     font-size: 25px;
   }
 }

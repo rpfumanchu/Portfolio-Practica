@@ -16,6 +16,6 @@
   
   @media screen and (min-width:1024px) {
     .video1, .video2, .video6 {
-      height: 65vh;
+      height: 55vh;
     }
   }

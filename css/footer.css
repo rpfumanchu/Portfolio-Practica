@@ -1,31 +1,23 @@
-.footer  {
+.footer {
   background-color: var(--main-color);
   color: white;
   margin-bottom: 0px;
+  padding: 20px;
 }
+
+footer a {
+  display: inline-block;
+  line-height: 0;
+  margin-right: 10px;
+}
+
 .p {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.social-link img {
-  padding: 0px 10px;
-    
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:768px) {
-  
-  
+@media screen and (min-width: 768px) {
   .p {
     font-size: 26px;
-    
-  }
-  .social-link img {
-    padding: 0px 30px;
-    
   }
 }
