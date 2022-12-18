@@ -1,33 +1,27 @@
 .carousel-link {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-link a {
-    transition: 3s;
-    ;
+  transition: 3s;
 }
-
-
 
 .carousel-slides {
-    height: 40vh;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    overflow: hidden; 
-    scroll-behavior: smooth;
-    margin-bottom: 10px;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin-bottom: 10px;
 }
 
-.carousel-slides > div  {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-color: var(--main-color);
+.carousel-slides > div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-color);
 }
-
-
-    

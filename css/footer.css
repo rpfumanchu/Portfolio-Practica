@@ -20,4 +20,8 @@ footer a {
   .p {
     font-size: 26px;
   }
+
+  footer a {
+    margin-right: 5%;
+  }
 }
